@@ -86,6 +86,7 @@ const Lab5 = (app) => {
   });
 
   app.post("/a5/todos", (req, res) => {
+    console.log("create is being called");
     const newTodo = {
       ...req.body,
       id: new Date().getTime(),
@@ -110,11 +111,11 @@ const Lab5 = (app) => {
   //     res.json(todos);
   //   });
 
-  //   app.get("/a5/todos/create", (req, res) => {
-  //     const { id } = req.params;
-  //     const todo = todos.find((t) => t.id === parseInt(id));
-  //     res.json(todo);
-  //   });
+  // app.post("/a5/todos/create", (req, res) => {
+  //   const { id } = req.params;
+  //   const todo = todos.find((t) => t.id === parseInt(id));
+  //   res.json(todo);
+  // });
 
   app.get("/a5/todos/:id/delete", (req, res) => {
     const { id } = req.params;
