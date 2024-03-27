@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "start": "node App.js",
+  "start": "npm start",
   "author": "",
   "license": "ISC",
   "dependencies": {
