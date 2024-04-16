@@ -56,6 +56,7 @@ export default function UserRoutes(app) {
   };
 
   const profile = async (req, res) => {
+    console.log(req.session["currentUser"]);
     res.json(req.session["currentUser"]);
   };
 
