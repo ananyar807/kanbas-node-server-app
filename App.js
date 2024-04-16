@@ -31,7 +31,7 @@ if (process.env.NODE_ENV !== "development") {
   sessionOptions.cookie = {
     sameSite: "none",
     secure: true,
-    domain: process.env.HTTP_SERVER_DOMAIN,
+    domain: "https://kanbas-node-server-app-dsa7.onrender.com",
   };
 }
 app.use(session(sessionOptions));
