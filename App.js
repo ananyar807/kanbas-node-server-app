@@ -14,7 +14,10 @@ app.use(express.json());
 app.use(
   cors({
     credentials: true,
-    origin: process.env.FRONTEND_URL,
+    origin:
+      process.env.NODE_ENV === "production"
+        ? process.env.NETLIFY_URL
+        : process.env.FRONTEND_URL,
   })
 );
 
