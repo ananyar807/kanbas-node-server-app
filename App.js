@@ -9,8 +9,6 @@ import cors from "cors";
 import "dotenv/config";
 import session from "express-session";
 
-// mongoose.connect("mongodb://127.0.0.1:27017/kanbas");
-// mongodb+srv://radhakrishnanan:vX76t4x6i7Ziw0DE@kanbas-web-dev.1k8ki6n.mongodb.net/kanbas?retryWrites=true&w=majority&appName=Kanbas-Web-Dev
 const app = express();
 app.use(express.json());
 app.use(
