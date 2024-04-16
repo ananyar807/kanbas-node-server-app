@@ -22,7 +22,7 @@ app.use(
 );
 
 const sessionOptions = {
-  secret: process.env.SESSION_SECRET,
+  secret: "my secret key",
   resave: false,
   saveUninitialized: false,
 };
