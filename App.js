@@ -9,7 +9,6 @@ import cors from "cors";
 import "dotenv/config";
 import session from "express-session";
 
-const cors = require("cors");
 const app = express();
 app.use(express.json());
 app.use(
